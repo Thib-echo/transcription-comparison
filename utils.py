@@ -11,7 +11,7 @@ def transcribe_and_time(transcription_service, audio_duration):
     transcription_time = end_time - start_time
     percentage = (transcription_time / audio_duration) * 100
 
-    print(f"{transcription_service.__class__.__name__} Transcription Time: {transcription_time} seconds ({percentage:.2f}% of audio duration)")
+    print(f"{transcription_service.__class__.__name__} Transcription Time: {transcription_time:.2f} seconds ({percentage:.2f}% of audio duration)")
     
     return transcription, transcription_time
 

@@ -24,7 +24,8 @@ class GladiaTranscription:
         return concatenated_transcription
 
     def transcribe(self):
-        print("Starting transcription for Gladia")
+        print(f"{'Starting transcription for Gladia':-^60}")
+        
         headers = {
             "x-gladia-key": self.gladia_token,
             "accept": "application/json",

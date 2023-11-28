@@ -14,7 +14,8 @@ class FasterWhisperTranscription:
 
 
     def transcribe(self):
-        print("Starting transcription for FasterWhisper")
+        print(f"{'Starting transcription for FasterWhisper':-^60}")
+
         # Run on GPU with INT8 for old GPU
         model = WhisperModel(self.model_size, device="cuda", compute_type="int8")
         

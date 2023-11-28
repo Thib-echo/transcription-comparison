@@ -60,6 +60,7 @@ class WhisperTranscription:
     #         return None
 
     def transcribe(self):
+        print(f"{'Starting transcription for Whisper':-^60}")
         model = whisper.load_model(self.model_size)
         result = model.transcribe(self.audio_path, language='fr', beam_size=5)
         
