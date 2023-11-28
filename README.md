@@ -70,3 +70,20 @@ This will transcribe the provided audio file using all three services, compare t
 
 ## Output
 The script prints the transcription time for each service and the total running time to the console. It also creates HTML files in the outputs directory, visualizing the differences between each pair of transcription services.
+
+Here is an exemple of output using the `large-v3` on a `Nvidia Gefore GTX 1060` for the `2.mp3` file :
+
+```bash
+python main.py -a ".\audio_files\2.mp3" --model-size "large-v3"
+
+Audio Duration: 20.17795918367347 seconds
+----------Starting transcription for FasterWhisper----------
+FasterWhisperTranscription Transcription Time: 20.45 seconds (101.34% of audio duration)
+-------------Starting transcription for Gladia--------------
+GladiaTranscription Transcription Time: 11.87 seconds (58.82% of audio duration)
+-------------Starting transcription for Whisper-------------
+WhisperTranscription Transcription Time: 60.42 seconds (299.42% of audio duration)
+Total Running Time: 93.25603723526001 seconds
+```
+
+
