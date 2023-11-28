@@ -23,6 +23,12 @@ Clone the repository or download the source code:
 git clone git@github.com:Thib-echo/transcription-comparison.git
 cd transcription-comparison
 ```
+Create a virtual env and activate it:
+```bash
+python -m venv env
+source env/bin/activate # For linux users
+.\env\Script\activate # For windows users
+```
 
 ### Dependencies
 Install the necessary Python packages using pip:
